@@ -17,7 +17,7 @@ function About() {
   return (
     <div className="container px-4 py-5" id="icon-grid">
       <h2 className="about-h2 pb-3 border-bottom"style={{color:"rgb(165, 209, 247)"}}>About us</h2>
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 py-5">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 py-5 mx-auto">
         {icons.map((item) => (
           <div key={item.id} className="col align-items-center" >
 

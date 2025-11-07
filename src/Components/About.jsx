@@ -1,6 +1,7 @@
 import React from "react";
 //import '../index.css'; 
 import { BarChartLineFill, BookFill, Mortarboard, PersonLinesFill } from 'react-bootstrap-icons';
+import { Link } from "react-router-dom";
 
 
 // Define your icons and text in an array
@@ -35,6 +36,12 @@ function About() {
           </div>
         ))}
       </div>
+       <Link to="/Contact">
+            <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
+    
+              Contacts ➡️
+            </button>
+             </Link>
     </div>
   );
 }

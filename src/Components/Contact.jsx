@@ -28,7 +28,7 @@ function Contact() {
               alignItems: "center",
               marginTop: "1rem",
               gap:'1rem'
-             }}> <i className="bi bi-arrow-down-circle-fill" style={{ color: "#1d2b64", fontSize: "2.5rem" }}> 
+             }}> <i className="bi bi-arrow-right-circle-fill" style={{ color: "#1d2b64", fontSize: "2.5rem" }}> 
              </i> 
 
 

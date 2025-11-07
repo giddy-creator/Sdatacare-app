@@ -6,11 +6,11 @@ function Contact() {
     <div className="container py-5">
     
       <div className="d-flex justify-content-center">
-        <div className="  shadow-lg" 
-        style={{ maxWidth: '1000px',
+        <div className="  shadow-lg  text-center contact-card" 
+        style={{ maxWidth: '600px',
             width: '90%',
-            fontSize: '2rem',
-            padding:'9rem',
+            fontSize: '1.2rem',
+            padding:'3rem',
             backgroundColor: 'rgba(255, 255, 255, 0.7)',
             borderRadius: '3rem'
         }}>
@@ -27,8 +27,9 @@ function Contact() {
              justifyContent: "center",
               alignItems: "center",
               marginTop: "1rem",
-              gap:'1rem'
-             }}> <i className="bi bi-arrow-right-circle-fill" style={{ color: "#1d2b64", fontSize: "2.5rem" }}> 
+              gap:'1rem',
+              flexWrap: "wrap" 
+             }}> <i className="bi bi-arrow-right-circle-fill" style={{ color: "#1d2b64", fontSize: "2rem" }}> 
              </i> 
 
 

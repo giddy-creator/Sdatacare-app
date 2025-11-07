@@ -1,9 +1,29 @@
 import React from "react"; 
 import sDataIcon from "../assets/umbrella.jpg"
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 function Header(){
+
+  useEffect(() => {
+    const navLinks = document.querySelectorAll(".navbar-collapse .nav-link");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navbarCollapse.classList.remove("show");
+      });
+    });
+
+    return () => {
+      navLinks.forEach((link) => {
+        link.removeEventListener("click", () => {
+          navbarCollapse.classList.remove("show");
+        });
+      });
+    };
+  }, []);
      return(
      <nav className="navbar navbar-expand-lg navbar-light  fixed-top py-1">
       <div className="container-fluid">

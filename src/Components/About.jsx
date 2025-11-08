@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 // Define your icons and text in an array
 const icons = [
-  { id: 1, icon: <BarChartLineFill  size={30} color="rgb(234, 181, 112)"/> , title: "Data Analysis", text: "We use up-to-date Softwares to analyze all sorts of data, ranging from social Sciences, Agricultural, Biological and Medical Science among others." },
+  { id: 1, icon: <BarChartLineFill  size={30} color="rgb(234, 181, 112)"/> , title: "Data Analysis", text: "We use up-to-date Softwares to analyze all sorts of data, ranging from Educational, Agricultural, Biological and Medical Science among others." },
   { id: 2, icon: <BookFill  size={30} color="rgb(234, 181, 112)"/>, title: "Proposal Writing", text: "We write Proposals for research funding, academics and donations." },
-  { id: 3, icon: <Mortarboard  size={30} color="rgb(234, 181, 112)"/>, title: "Training", text: "We train and certify Researchers on data Coding, analysis and report writing using statistical software/Tools such as R=GUI, STATA, SPSS and PYTHON." },
-  { id: 4, icon: <PersonLinesFill  size={30} color="rgb(234, 181, 112)"/>, title: "Consultancy", text: "We offer Consultancy on Research,Methodology,Data collection,methods and analysis in all areas of research." },
+  { id: 3, icon: <Mortarboard  size={30} color="rgb(234, 181, 112)"/>, title: "Training", text: "We train and certify Researchers on data Coding, analysis and report writing using statistical software such as R-GUI, STATA, SPSS and PYTHON." },
+  { id: 4, icon: <PersonLinesFill  size={30} color="rgb(234, 181, 112)"/>, title: "Consultancy", text: "We offer Consultancy on Research Methodology,Data collection methods and analysis in all areas of research." },
  
 ];
 

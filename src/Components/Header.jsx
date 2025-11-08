@@ -25,7 +25,7 @@ function Header(){
     };
   }, []);
      return(
-     <nav className="navbar navbar-expand-lg navbar-light  fixed-top py-1">
+     <nav className="navbar navbar-expand-lg navbar-light  fixed-top "style={{ padding: "0.1rem 0.2rem" }}>
       <div className="container-fluid">
            
         <div className=" navbar-brand logo fs-2 ">

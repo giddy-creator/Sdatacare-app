@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
 
       return(
-     <footer className="footer text-white mt-3 pt-2 pb-2 border-top" style={{ borderColor: "rgba(255,255,255,0.5)" }}>
+     <footer className="footer text-white mt-3 pt-2 pb-2 border-top" style={{ borderColor: "rgba(255,255,255,0.5)", padding: "0.1rem 1rem" }}>
       <div className="container text-center">
         <div className="row">
           {/* Company Info */}

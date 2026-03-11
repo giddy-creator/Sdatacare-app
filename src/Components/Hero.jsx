@@ -42,7 +42,7 @@ function Hero() {
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <Link to="/About">
                 <button type="button" className="btn btn-primary btn-lg px-4 me-md-2 hero-cta-btn">
-                  About us ➡️
+                  About us 
                 </button>
               </Link>
             </div>

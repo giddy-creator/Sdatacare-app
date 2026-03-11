@@ -76,7 +76,7 @@ function About() {
 
         <Link to="/Contact">
           <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
-            Contacts ➡️
+            Contacts 
           </button>
         </Link>
       </div>

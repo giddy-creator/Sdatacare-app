@@ -17,6 +17,7 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
   --radius-pill: 999px;
+  
 }
 
 body.theme-dark {
@@ -350,6 +351,148 @@ body.theme-light .founder-card {
   background: radial-gradient(circle at 0 0, rgba(74, 169, 255, 0.22), rgba(9, 13, 40, 0.98));
 }
 
+/* Container */
+.contact-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Heading */
+.contact-heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1d2b64;
+}
+
+/* Subtext */
+.contact-sub {
+  max-width: 650px;
+  margin: auto;
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+
+/* Grid of contact boxes */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Individual box */
+.contact-box {
+  padding: 30px;
+  border-radius: 16px;
+  background: var(--card-bg);
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.contact-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.contact-box i {
+  font-size: 2rem;
+  color: #2f80ed;
+}
+
+.contact-box h4 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.contact-box p {
+  margin-top: 6px;
+  color: var(--text-main);
+}
+
+/* Call to action */
+.contact-cta {
+  margin-top: 70px;
+}
+
+.contact-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #f2994a;
+  color: white;
+  padding: 16px 34px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: all 0.25s ease;
+}
+
+.contact-cta a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  background: #ff8a2b;
+}
+
+.contact-cta a::after {
+  content: "→";
+  font-size: 1.2rem;
+}
+
+/* Light/Dark mode variables */
+:root {
+  --card-bg: rgb(215, 206, 218);
+  --text-main: #333;
+}
+
+[data-theme="dark"] {
+  --card-bg: #1f2430;
+  --text-main: #e5e7eb;
+}
+
+
+body.theme-dark .contact-sub {
+  color: var(--text-muted);
+}
+
+/* Light mode overrides */
+body.theme-light .contact-heading {
+  color: #162047; /* dark blue for light mode */
+}
+
+body.theme-light .contact-sub {
+  color: #333333; /* readable on white background */
+}
+/* Make heading and subtext visible on dark background */
+.contact-heading {
+  color: #ffffff; /* white text for dark blue background */
+}
+
+.contact-sub {
+  color: #e0e0e0; /* lighter gray for readability */
+}
+
+/* Make email link stand out */
+.contact-email {
+  color: #ff6f01; /* corporate accent color */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.contact-email:hover {
+  color: #ac1501;
+  text-decoration: underline;
+}
+
+/* Remove CTA button styles if present */
+.contact-cta {
+  display: none; /* hide the conversation button */
+}
 @media (max-width: 767.98px) {
   .about-section {
     padding-top: 3.5rem;
